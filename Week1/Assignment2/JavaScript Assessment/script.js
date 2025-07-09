@@ -42,12 +42,11 @@ function addTransaction(payee, amount, reason) {
     // Note: Generated a unique 'id' for each new transaction
     const id = transactions.length > 0 ? transactions[transactions.length - 1].id + 1 : 1;
 
-    // task3: Complete the 'newTransaction' object by replacing the placeholder values with appropriate data.
     const newTransaction = {
         id: id,
-        payee: '',
-        amount: '',
-        reason: ''
+        payee: payee,
+        amount: amount,
+        reason: reason
     };
 
 
