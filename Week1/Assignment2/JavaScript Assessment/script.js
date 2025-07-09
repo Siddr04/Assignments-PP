@@ -11,15 +11,11 @@ document.getElementById('transactionForm').addEventListener('submit', function (
 
     // task2: Retrieve 'payee', 'amount', and 'reason' values from form inputs using document.getElementById().
 
-    // Replace '' with code to access 'payee' input value from HTML document
-    const payee = '';
+    const payee = document.getElementById('payee').value.trim();
 
-    // Replace '' with code to access 'amount' input value from HTML document and convert it to float
-    const amount = '';
+    const amount = parseFloat(document.getElementById('amount').value);
 
-    // Replace '' with code to access 'reason' input value from HTML document
-    const reason = '';
-
+    const reason = document.getElementById('reason').value.trim();
 
     if (payee === '' || amount <= 0 || isNaN(amount)) {
         alert('Please enter valid transaction details or check your script code.');
