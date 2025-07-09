@@ -41,7 +41,8 @@ document.getElementById('transactionForm').addEventListener('submit', function (
 function addTransaction(payee, amount, reason) {
     // Note: Generated a unique 'id' for each new transaction
     const id = transactions.length > 0 ? transactions[transactions.length - 1].id + 1 : 1;
-
+    
+    // task3: Complete the 'newTransaction' object by replacing the placeholder values with appropriate data.
     const newTransaction = {
         id: id,
         payee: payee,
@@ -51,7 +52,7 @@ function addTransaction(payee, amount, reason) {
 
 
     // task4: Complete the below statement to add the 'newTransaction' object into the 'transactions' array using the 'push' method.
-    transactions.push();
+    transactions.push(newTransaction);
 
 }
 
